@@ -23,12 +23,52 @@
       </div>
       <input id="name" type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
     </div>
-
     <button onClick="handleNameInput()" class="start">START</button>
   </div>
-
+  <div class="card" id="event-card">
+    <div class="card-body">
+      <h5 class="card-title">Event</h5>
+      <p class="card-text" id="question"></p>
+      <div class="options">
+        <button id="option1" onClick="isCorrect(this.innerHTML)" type="button" class="btn btn-warning"></button>
+        <button id="option2" onClick="isCorrect(this.innerHTML)" type="button" class="btn btn-warning"></button>
+      </div>
+    </div>
+  </div>
 </body>
 <script>
+   const data = [
+              {
+                id: 1,
+                question: "You wake up after the hackathon and about to leave the house.",
+                option1: "Leave the house with a reusable bag?",
+                option2: "You're in a rush, forget the bag!",
+                correct: "Leave the house with a reusable bag?",
+              },
+              {
+                id: 2,
+                question: "You wake up after the hackathon and about to leave the house.",
+                option1: "Leave the house with a reusable bag?",
+                option2: "You're in a rush, forget the bag!",
+                correct: option1,
+              },
+              {
+                id: 3,
+                question: "You wake up after the hackathon and about to leave the house.",
+                option1: "Leave the house with a reusable bag?",
+                option2: "You're in a rush, forget the bag!",
+                correct: option1,
+              },
+              {
+                id: 4,
+                question: "You wake up after the hackathon and about to leave the house.",
+                option1: "Leave the house with a reusable bag?",
+                option2: "You're in a rush, forget the bag!",
+                correct: option1,
+              },
+              
+
+              ]
   const handleNameInput = function() {
     
     const username = document.getElementById(`name`).value;
@@ -41,10 +81,59 @@
       document.getElementById("name-error").style.visibility = "hidden";
       document.getElementById("input-container").style.display = "none";
     }
-    // display the input name on screen
+    // display the input name and scoreboard on screen
     document.getElementById("saved-username").style.visibility = "visible";
+    document.getElementById("scoreboard").style.visibility = "visible";
+    document.getElementById("event-card").style.visibility = "visible";
     document.getElementById('saved-username').innerText = username;
+
+    assign()
+
   }
+
+  const handleEvents = function() {
+    let score = document.getElementById("points").innerHTML
+    console.log(score)
+    document.getElementById('points').innerText = '5';
+    score += 5;
+
+  }
+  let currentId = 0
+
+  const isCorrect = function(choice) {
+
+    const { correct } = data[currentId]
+    console.log(data[currentId])
+    console.log(correct)
+
+    if(choice === correct) {
+      handleEvents()
+    }
+    // check data.length before increasing counter
+    if (currentId < data.length-1) {
+      currentId += 1
+
+    } else {
+      console.log("congrats")
+    }
+  }
+
+  function change_background_image(url){
+    document.body.style.backgroundImage = url;
+  }
+
+  const assign = function() {
+    let eventQuestion = document.getElementById("question")
+    
+    let eventOption1 = document.getElementById("option1")
+    let eventOption2 = document.getElementById("option2")
+    const { question, id, option1, option2, correct } = data[currentId]
+    eventQuestion.innerHTML = question
+    eventOption1.innerHTML = option1
+    eventOption2.innerHTML = option2
+    
+  }
+ 
   
 </script>
 </html>

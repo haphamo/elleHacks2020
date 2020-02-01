@@ -9,9 +9,9 @@ html body {
 #input-container {
   display:flex;
   flex-direction: column;
-  margin-top: 50vh;
-  
+  justify-content: flex-end;
 }
+
 .start-name-input {
   display: flex;
   width: 30em;
@@ -23,10 +23,10 @@ html body {
   padding: 1em 1em 1em 1em;
   color: #595959;
   background-color: #f9f9f9;
-  transform: translate3d(3vw, 2vh, 0);
   border-radius: 1rem;
   white-space: nowrap;
-  margin-bottom: 3rem;
+  margin: 3rem 2rem 3rem 3rem;
+  padding: 1em 1em 1em 1em;
 }
 #points {
   margin-top: 1rem;
@@ -36,10 +36,10 @@ html body {
   position: relative;
   color: #595959;
   background-color: #f9f9f9;
- 
+  visibility: hidden;
   border-radius: 1rem;
   width: min-content;
-  margin: 0rem 2rem 0rem;
+  margin: 0rem 0rem 0rem 3rem;
   padding: 1em 1em 1em 1em;
 }
 
@@ -51,4 +51,20 @@ html body {
   width: 10em;
   text-align: center;
   margin: auto;
+}
+
+.card {
+  margin: auto;
+  width: 40rem;
+  border-radius: 2rem;
+  
+  visibility: hidden;
+}
+
+.options {
+  display:flex;
+  justify-content: space-between;
+}
+h5 {
+  text-align: center;
 }
