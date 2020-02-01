@@ -10,6 +10,9 @@
 </head>
 <body>
   <div id="input-container">
+    <div class="alert alert-danger start-name-input" id="name-error" role="alert">
+      Please type in a name!
+    </div>
     <div class="start-name-input">
       <div class="input-group-prepend">
         <span class="input-group-text" id="inputGroup-sizing-default">Enter name:</span>
@@ -19,11 +22,19 @@
 
     <button onClick="getName()" class="start">START</button>
   </div>
+
 </body>
 <script>
   const getName = function() {
+    
     const username = document.getElementById(`name`).value;
-    console.log(username)
+    
+    if(!username) {
+      document.getElementById("name-error").style.visibility = "visible";
+      return
+    }
+   
+    document.getElementById("name-error").style.visibility = "hidden";
     document.getElementById("input-container").style.display = "none";
   }
   

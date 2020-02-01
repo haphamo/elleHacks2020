@@ -1,8 +1,5 @@
-:root {
-  --background: url("./images/eb49a8e653dcb96c345f23f09ea7b8a7.jpg")
-}
-body {
-  background: var(--background) no-repeat fixed center;
+html body {
+  background: lightblue url("./images/eb49a8e653dcb96c345f23f09ea7b8a7.jpg") no-repeat fixed center; 
 }
 
 #user {
@@ -19,6 +16,9 @@ body {
   display: flex;
   width: 30em;
   margin: auto;
+}
+#name-error {
+  visibility: hidden;
 }
 
 .start {
