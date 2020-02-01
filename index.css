@@ -1,0 +1,25 @@
+body {
+  background: lightblue url("./images/eb49a8e653dcb96c345f23f09ea7b8a7.jpg") no-repeat fixed center;
+}
+
+#user {
+  height: 10vh;
+}
+
+.input-container {
+  display:flex;
+  flex-direction: column;
+  margin-top: 50vh;
+  
+}
+.start-name-input {
+  display: flex;
+  width: 30em;
+  margin: auto;
+}
+
+.start {
+  width: 10em;
+  text-align: center;
+  margin: auto;
+}
