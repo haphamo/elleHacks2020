@@ -9,15 +9,23 @@
   <title>Document</title>
 </head>
 <body>
-  <div class="input-container">
+  <div id="input-container">
     <div class="start-name-input">
       <div class="input-group-prepend">
         <span class="input-group-text" id="inputGroup-sizing-default">Enter name:</span>
       </div>
-      <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+      <input id="name" type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
     </div>
 
-    <button class="start">START</button>
+    <button onClick="getName()" class="start">START</button>
   </div>
 </body>
+<script>
+  const getName = function() {
+    const username = document.getElementById(`name`).value;
+    console.log(username)
+    document.getElementById("input-container").style.display = "none";
+  }
+  
+</script>
 </html>

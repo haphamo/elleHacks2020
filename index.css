@@ -1,12 +1,15 @@
+:root {
+  --background: url("./images/eb49a8e653dcb96c345f23f09ea7b8a7.jpg")
+}
 body {
-  background: lightblue url("./images/eb49a8e653dcb96c345f23f09ea7b8a7.jpg") no-repeat fixed center;
+  background: var(--background) no-repeat fixed center;
 }
 
 #user {
   height: 10vh;
 }
 
-.input-container {
+#input-container {
   display:flex;
   flex-direction: column;
   margin-top: 50vh;
