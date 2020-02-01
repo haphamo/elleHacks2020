@@ -17,6 +17,32 @@ html body {
   width: 30em;
   margin: auto;
 }
+#saved-username {
+  visibility: hidden;
+  width: min-content;
+  padding: 1em 1em 1em 1em;
+  color: #595959;
+  background-color: #f9f9f9;
+  transform: translate3d(3vw, 2vh, 0);
+  border-radius: 1rem;
+  white-space: nowrap;
+  margin-bottom: 3rem;
+}
+#points {
+  margin-top: 1rem;
+  text-align: center;
+}
+.scoreboard {
+  position: relative;
+  color: #595959;
+  background-color: #f9f9f9;
+ 
+  border-radius: 1rem;
+  width: min-content;
+  margin: 0rem 2rem 0rem;
+  padding: 1em 1em 1em 1em;
+}
+
 #name-error {
   visibility: hidden;
 }
