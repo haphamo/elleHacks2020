@@ -17,6 +17,32 @@ html body {
   width: 30em;
   margin: auto;
 }
+
+#top {
+  margin: 3rem 2rem 3rem 3rem;
+  padding: 1em 1em 1em 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  visibility: visible;
+}
+
+#rewards {
+  visibility: hidden;
+}
+#second-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#reward-list {
+  padding: 1em 1em 1em 1em;
+  background-color: #f9f9f9;
+  border-radius: 1em;
+  margin-right: 3rem;
+}
+
 #saved-username {
   visibility: hidden;
   width: min-content;
@@ -25,13 +51,15 @@ html body {
   background-color: #f9f9f9;
   border-radius: 1rem;
   white-space: nowrap;
-  margin: 3rem 2rem 3rem 3rem;
-  padding: 1em 1em 1em 1em;
+
 }
+
+
 #points {
   margin-top: 1rem;
   text-align: center;
 }
+
 .scoreboard {
   position: relative;
   color: #595959;
@@ -41,6 +69,7 @@ html body {
   width: min-content;
   margin: 0rem 0rem 0rem 3rem;
   padding: 1em 1em 1em 1em;
+  height: 6rem;
 }
 
 #name-error {
@@ -57,7 +86,6 @@ html body {
   margin: auto;
   width: 40rem;
   border-radius: 2rem;
-  
   visibility: hidden;
 }
 
@@ -65,6 +93,7 @@ html body {
   display:flex;
   justify-content: space-between;
 }
+
 h5 {
   text-align: center;
 }
