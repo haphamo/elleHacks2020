@@ -45,6 +45,7 @@ const handleNameInput = function() {
   document.getElementById("scoreboard").style.visibility = "visible";
   document.getElementById("event-card").style.visibility = "visible";
   document.getElementById("rewards").style.visibility = "visible";
+  document.getElementById("list-of-rewards").style.visibility = "visible";
   document.getElementById("saved-username").innerText = username;
 
   assign();

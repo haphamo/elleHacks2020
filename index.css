@@ -10,6 +10,7 @@ html body {
   display:flex;
   flex-direction: column;
   justify-content: flex-end;
+  transform: translateY(-9rem);
 }
 
 .start-name-input {
@@ -29,6 +30,8 @@ html body {
 
 #rewards {
   visibility: hidden;
+  margin-right: 1rem;
+  
 }
 #second-row {
   display: flex;
@@ -36,13 +39,26 @@ html body {
   justify-content: space-between;
 }
 
-#reward-list {
+#list-of-rewards {
+  visibility: hidden;
+  color: #595959;
   padding: 1em 1em 1em 1em;
   background-color: #f9f9f9;
   border-radius: 1em;
   margin-right: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+.reward {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
+}
+.reward-img {
+  height: 6rem;
+}
 #saved-username {
   visibility: hidden;
   width: min-content;
@@ -53,7 +69,6 @@ html body {
   white-space: nowrap;
 
 }
-
 
 #points {
   margin-top: 1rem;
@@ -70,6 +85,7 @@ html body {
   margin: 0rem 0rem 0rem 3rem;
   padding: 1em 1em 1em 1em;
   height: 6rem;
+ 
 }
 
 #name-error {
@@ -87,6 +103,7 @@ html body {
   width: 40rem;
   border-radius: 2rem;
   visibility: hidden;
+ 
 }
 
 .options {
