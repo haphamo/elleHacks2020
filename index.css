@@ -49,6 +49,7 @@ html body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-y: scroll;
 }
 .reward {
   display: flex;
@@ -67,7 +68,7 @@ html body {
   background-color: #f9f9f9;
   border-radius: 1rem;
   white-space: nowrap;
-
+  height: 4rem;
 }
 
 #points {
@@ -98,6 +99,9 @@ html body {
   margin: auto;
 }
 
+#video {
+  margin: auto; 
+}
 .card {
   margin: auto;
   width: 40rem;
@@ -109,6 +113,10 @@ html body {
 .options {
   display:flex;
   justify-content: space-between;
+  
+}
+#option2 {
+  white-space: pre-wrap;
 }
 
 h5 {
