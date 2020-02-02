@@ -1,7 +1,7 @@
 const data = [
   {
     id: 1,
-    question: "You wake up after the hackathon and about to leave the house?",
+    question: "The hackathon is over and you've hopefully caught up on sleep. You are leaving the house.",
     option1: "Leave the house with a reusable bag?",
     option2: "You're in a rush, forget the bag!",
     correct: "Leave the house with a reusable bag?"
@@ -25,7 +25,7 @@ const data = [
     question: "Your get a reminder to replace your old home appliances with energy efficient ones.",
     option1: "You will think about it later.",
     option2: "You purchase the energy efficient appliances.",
-    correct: "Leave the house with a reusable bag?"
+    correct: "You purchase the energy efficient appliances."
   }
 ];
 
@@ -63,28 +63,37 @@ let currentId = 0;
 
 const isCorrect = function(choice) {
   const { correct } = data[currentId];
+
   if (currentId < data.length) {
     if (choice === correct) {
       totalScore += 5;
       handleEvents();
     } else {
+ 
       totalScore -= 1;
       handleEvents();
     } 
-
   }
   
   // check data.length before increasing counter
-  if (currentId < data.length - 1) {
+  if (currentId < data.length -1) {
     
     currentId += 1;
     assign();
-  } else {
-    console.log("congrats");
-  
-    complete();
     handleEvents();
+  } else {
+    if (currentId === data.length){
+     return 
+
+    } else {
+      
+      console.log("congrats");
+      console.log("currentId", currentId);
+      complete();
+      handleEvents();
+    }
   }
+  
 };
 
 function change_background_image(url) {
