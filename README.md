@@ -2,7 +2,11 @@
   <a href="https://ellehacks.com/"><img height="100px" alt="elle-hacks-logo" src="https://raw.githubusercontent.com/haphamo/elleHacks2020/readme/images/elle-hacks-logo.png"></a>
 </p>
 <p align="center">
+<<<<<<< HEAD
    <a href="https://ellehacks.com/"><img alt="banner" src="https://raw.githubusercontent.com/haphamo/elleHacks2020/readme/images/elle-hacks-banner.jpg"></a>
+=======
+  <img alt="banner" src="https://raw.githubusercontent.com/haphamo/elleHacks2020/readme/images/elle-hacks-banner.jpg">
+>>>>>>> 7dc3f0dd951df900489152406acc945e1a94424a
 </p>
 
 # What is ElleHacks
