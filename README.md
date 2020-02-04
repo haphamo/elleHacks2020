@@ -16,5 +16,5 @@ The event had a variety of challenges to choose from, all the themes/challenges 
 
 The three of them chose to create a educational simulation game about sustainability. They decided on using Javascipt, HTML and CSS.
 
-## Would I do it Again ?
+## Would We do it Again ?
 Absolutely !
